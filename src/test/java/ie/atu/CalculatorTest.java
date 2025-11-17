@@ -47,7 +47,7 @@ public class CalculatorTest {
     public void testMul_Fail() {
 
         Exception ex = assertThrows(ArithmeticException.class, () -> calc.mul(Integer.MAX_VALUE, 1));
-        assertEquals("Number cannot be greater than or equal to Integer.MAX_VALUE", ex.getMessage());
+        assertEquals("Number cannot be greater than or equal to Integer.MAX_VALUE ", ex.getMessage());
 
     }
 
